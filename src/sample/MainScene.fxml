@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label id="startImage" layoutX="-8.0" layoutY="-72.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.77" prefHeight="604.0" prefWidth="784.0" stylesheets="@style.css" text="Label" textAlignment="JUSTIFY" textOverrun="CLIP" underline="true">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis></Label>
+      <Button id="startBtn" fx:id="startBtn" layoutX="239.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleButton1" prefHeight="40.0" prefWidth="153.0" stylesheets="@style.css" text="New Game">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Label id="lableStartGame" opacity="0.75" prefHeight="70.0" prefWidth="630.0" stylesheets="@style.css">
+      </Label>
+      <Label id="startLabel" alignment="CENTER" prefHeight="70.0" prefWidth="630.0" stylesheets="@style.css" text="Destroy or Defened" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5076336023461727" endY="0.8167938903997872" startX="0.4227098799843826" startY="0.0610687168499896">
+               <stops>
+                  <Stop color="#bd4125" />
+                  <Stop color="#3c2d8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>

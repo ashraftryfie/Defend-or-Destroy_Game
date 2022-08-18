@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label id="selectingTitle" alignment="CENTER" layoutX="174.0" layoutY="79.0" prefHeight="47.0" prefWidth="252.0" stylesheets="@style.css" text="Selecting Units">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Label>
+        <Button alignment="CENTER" layoutX="120.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleButtonStatic" prefHeight="38.0" prefWidth="135.0" styleClass="selectingBtns" stylesheets="@style.css" text="Static Selecting" />
+      <MenuButton accessibleRole="CONTEXT_MENU" alignment="CENTER" layoutX="376.0" layoutY="188.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="135.0" styleClass="selectingBtns" stylesheets="@style.css" text="Dynamic Selecting">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#handleButtonDynamic" styleClass="DynamicWaySelecting" text="Best Choice" />
+          <MenuItem disable="true" mnemonicParsing="false" onAction="#handleButtonDynamicFile" styleClass="DynamicWaySelecting" text="From File" visible="false" />
+        </items>
+      </MenuButton>
+      <Label fx:id="teamName" alignment="CENTER" layoutX="135.0" layoutY="35.0" prefHeight="38.0" prefWidth="334.0" />
+    </children>
+</AnchorPane>

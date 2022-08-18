@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane prefHeight="384.0" prefWidth="396.0" style="-fx-border-color: darkgray;">
+            <children>
+                <Label alignment="CENTER" layoutX="118.0" layoutY="34.0" prefHeight="37.0" prefWidth="160.0" styleClass="TeamsName" stylesheets="@style.css" text="Defender Team" />
+                <TextField fx:id="defenderTeamName" layoutX="136.0" layoutY="99.0" promptText="team name" />
+                <Label layoutX="52.0" layoutY="102.0" text="Your Name :">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="161.0" text="Players Number :">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="defenderComboBox" layoutX="165.0" layoutY="158.0" prefHeight="25.0" prefWidth="116.0" promptText="number">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <Integer fx:value="1" />
+                            <Integer fx:value="2" />
+                            <Integer fx:value="3" />
+                            <Integer fx:value="4" />
+                            <Integer fx:value="5" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </children>
+        </Pane>
+        <Pane layoutX="396.0" prefHeight="384.0" prefWidth="396.0" style="-fx-border-color: darkgray;">
+            <children>
+                <Label alignment="CENTER" layoutX="113.0" layoutY="32.0" prefHeight="37.0" prefWidth="170.0" styleClass="TeamsName" stylesheets="@style.css" text="Attacker Team" />
+                <Label layoutX="45.0" layoutY="97.0" text="Your name: ">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="45.0" layoutY="154.0" text="Players Number :">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="attackerTeamName" layoutX="124.0" layoutY="94.0" promptText="team name" />
+            <ComboBox fx:id="attackerComboBox" layoutX="155.0" layoutY="151.0" prefHeight="25.0" prefWidth="116.0" promptText="number">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <Integer fx:value="1" />
+                     <Integer fx:value="2" />
+                     <Integer fx:value="3" />
+                     <Integer fx:value="4" />
+                     <Integer fx:value="5" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label fx:id="warning" alignment="CENTER" layoutX="-163.0" layoutY="237.0" prefHeight="38.0" prefWidth="327.0" styleClass="warning" stylesheets="@style.css" />
+            </children>
+        </Pane>
+        <Button id="btn2" fx:id="btn2" layoutY="384.0" mnemonicParsing="false" onAction="#handleButton2" prefHeight="70.0" prefWidth="792.0" stylesheets="@style.css" text="Next" />
+    </children>
+</AnchorPane>

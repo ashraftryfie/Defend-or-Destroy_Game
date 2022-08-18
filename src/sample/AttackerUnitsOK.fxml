@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="numGrizzly" prefHeight="460.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label layoutX="425.0" layoutY="31.0" styleClass="playerBuyingLabels" stylesheets="@style.css" text="Coins: ">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="217.0" layoutY="30.0" styleClass="playerBuyingLabels" stylesheets="@style.css" text="Team name: " />
+        <Label layoutX="49.0" layoutY="30.0" styleClass="playerBuyingLabels" stylesheets="@style.css" text="Player ID: " />
+        <Label fx:id="playerID" layoutX="122.0" layoutY="31.0" prefHeight="18.0" prefWidth="55.0" styleClass="playerBuyingInfo" stylesheets="@style.css" />
+        <Label fx:id="nam" layoutX="314.0" layoutY="31.0" prefHeight="18.0" prefWidth="86.0" styleClass="playerBuyingInfo" stylesheets="@style.css" />
+        <Label fx:id="coins" layoutX="480.0" layoutY="27.0" prefHeight="26.0" prefWidth="65.0" styleClass="playerBuyingInfo" stylesheets="@style.css" />
+        <Button alignment="CENTER" layoutX="572.0" layoutY="395.0" mnemonicParsing="false" onAction="#start" prefHeight="36.0" prefWidth="57.0" styleClass="SelectingUnits" stylesheets="@style.css" text="OK">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button layoutX="20.0" layoutY="265.0" mnemonicParsing="false" onAction="#teslaTankChooseEvent" prefHeight="80.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="TeslaTank" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="34.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Button layoutX="115.0" layoutY="99.0" mnemonicParsing="false" onAction="#infantryChooseEvent" prefHeight="74.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="Infantry" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="33.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Button layoutX="209.0" layoutY="99.0" mnemonicParsing="false" onAction="#sniperChooseEvent" prefHeight="74.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="Sniper" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="33.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label fx:id="numTanks" layoutX="19.0" layoutY="238.0" prefHeight="25.0" prefWidth="24.0" />
+        <Label fx:id="warning" alignment="CENTER" layoutX="148.0" layoutY="375.0" prefHeight="26.0" prefWidth="269.0" styleClass="warning" stylesheets="@style.css" />
+        <Label fx:id="numSoldiers" layoutX="10.0" layoutY="77.0" prefHeight="20.0" prefWidth="24.0" />
+        <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="352.0" prefHeight="17.0" prefWidth="89.0" text="50 $" />
+        <Label alignment="TOP_CENTER" layoutX="115.0" layoutY="183.0" prefHeight="17.0" prefWidth="82.0" text="5 $" />
+        <Button alignment="CENTER" layoutX="572.0" layoutY="26.0" mnemonicParsing="false" onAction="#reset" prefHeight="26.0" prefWidth="57.0" styleClass="SelectingUnits" stylesheets="@style.css" text="Reset">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button alignment="CENTER" layoutX="41.0" layoutY="395.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="57.0" styleClass="SelectingUnits" stylesheets="@style.css" text="Back">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="numSniper" layoutX="207.0" layoutY="72.0" prefHeight="25.0" prefWidth="24.0" />
+        <Label alignment="TOP_CENTER" layoutX="209.0" layoutY="183.0" prefHeight="17.0" prefWidth="82.0" text="5 $" />
+        <Button layoutX="486.0" layoutY="234.0" mnemonicParsing="false" onAction="#planeChooseEvent">
+            <graphic>
+                <Circle fx:id="BlackEagle" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="53.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label alignment="TOP_CENTER" layoutX="486.0" layoutY="352.0" prefHeight="17.0" prefWidth="122.0" text="75 $" />
+        <Label alignment="CENTER" layoutX="38.0" layoutY="241.0" prefHeight="0.0" prefWidth="55.0" text="Tesla Tank" />
+        <Label layoutX="136.0" layoutY="78.0" text="Infantry" />
+        <Label layoutX="235.0" layoutY="78.0" text="Sniper" />
+        <Label alignment="CENTER" layoutX="517.0" layoutY="205.0" prefHeight="25.0" prefWidth="76.0" text="Black Eagle" />
+        <Button layoutX="21.0" layoutY="99.0" mnemonicParsing="false" onAction="#grizzlyChooseEvent" prefHeight="74.0" prefWidth="76.0">
+            <graphic>
+                <Circle fx:id="GrizzlyTank" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="33.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label layoutX="36.0" layoutY="78.0" text="Grizzly Tank" />
+        <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="183.0" prefHeight="17.0" prefWidth="82.0" text="3 $" />
+        <Label fx:id="numgrizzly" layoutX="16.0" layoutY="75.0" prefHeight="25.0" prefWidth="24.0" />
+        <Button layoutX="304.0" layoutY="100.0" mnemonicParsing="false" onAction="#navyChooseEvent" prefHeight="74.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="NavySEAL" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="33.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label layoutX="322.0" layoutY="79.0" text="Navy SEAL" />
+        <Label alignment="TOP_CENTER" layoutX="304.0" layoutY="183.0" prefHeight="17.0" prefWidth="82.0" text="10 $" />
+        <Label fx:id="numNavy" layoutX="301.0" layoutY="74.0" prefHeight="25.0" prefWidth="24.0" />
+        <Button layoutX="115.0" layoutY="265.0" mnemonicParsing="false" onAction="#mirageChooseEvent" prefHeight="80.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="MirageTank" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="35.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label alignment="CENTER" layoutX="124.0" layoutY="241.0" prefHeight="17.0" prefWidth="76.0" text="Mirage Tank" />
+        <Label alignment="TOP_CENTER" layoutX="114.0" layoutY="352.0" prefHeight="17.0" prefWidth="89.0" text="70 $" />
+        <Label fx:id="numMirage" layoutX="110.0" layoutY="238.0" prefHeight="25.0" prefWidth="24.0" />
+        <Button layoutX="213.0" layoutY="265.0" mnemonicParsing="false" onAction="#DestroyerChooseEvent" prefHeight="80.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="TankDestroyer" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="34.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label alignment="CENTER" layoutX="219.0" layoutY="241.0" prefHeight="17.0" prefWidth="86.0" text="Tank Destroyer" />
+        <Label alignment="TOP_CENTER" layoutX="211.0" layoutY="351.0" prefHeight="17.0" prefWidth="89.0" text="50 $" />
+        <Label fx:id="numDestroyer" layoutX="203.0" layoutY="238.0" prefHeight="25.0" prefWidth="24.0" />
+        <Button layoutX="307.0" layoutY="265.0" mnemonicParsing="false" onAction="#prismChooseEvent" prefHeight="80.0" prefWidth="82.0">
+            <graphic>
+                <Circle fx:id="PrismTank" fill="#eef3f8" onDragDetected="#DisplayUnits" radius="36.0" stroke="#6ecf7a" strokeType="INSIDE" strokeWidth="3.0" styleClass="unitsImages">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+            </graphic>
+        </Button>
+        <Label alignment="CENTER" layoutX="326.0" layoutY="242.0" prefHeight="17.0" prefWidth="65.0" text="Prism Tank" />
+        <Label alignment="TOP_CENTER" layoutX="304.0" layoutY="350.0" prefHeight="17.0" prefWidth="89.0" text=" 60 $" />
+        <Label fx:id="numPrism" layoutX="307.0" layoutY="241.0" prefHeight="25.0" prefWidth="24.0" />
+        <TextField alignment="CENTER" layoutX="230.0" layoutY="401.0" prefHeight="25.0" prefWidth="41.0" promptText="x" fx:id="xtext" />
+        <TextField fx:id="ytext" alignment="CENTER" layoutX="283.0" layoutY="401.0" prefHeight="25.0" prefWidth="41.0" promptText="y" />
+        <Label fx:id="numPlane" layoutX="487.0" layoutY="206.0" prefHeight="26.0" prefWidth="24.0" />
+        <Label alignment="CENTER" layoutX="144.0" layoutY="401.0" prefHeight="25.0" prefWidth="76.0" text="Coordinate : ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

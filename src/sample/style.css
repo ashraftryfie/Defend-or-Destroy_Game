@@ -1,0 +1,110 @@
+#startImage {
+    -fx-background-image: url("metalSlug.jpg");
+    -fx-background-repeat: no-repeat;
+}
+
+#lableStartGame {
+    -fx-background-color: gray;
+}
+
+#startBtn, .selectingBtns, .SelectingUnits{
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-font-weight: bolder;
+    -fx-font-family: Lato;
+}
+
+
+.DynamicWaySelecting{
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-font-weight: bolder;
+    -fx-font-family: Lato;
+    -fx-text-alignment: center;
+    -fx-padding: 10 50 10 10;
+    -fx-end-margin: 0;
+}
+
+#btn2 {
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-font-weight: bolder;
+    -fx-font-family: Lato;
+}
+
+#startBtn:hover, #btn2:hover {
+    -fx-background-color: #ddd;
+    -fx-text-fill: mediumseagreen;
+}
+
+.TeamsName {
+    -fx-font-family: Lato;
+    -fx-font-weight: bolder;
+    -fx-font-size: 18;
+    -fx-text-fill: mediumseagreen;
+}
+
+#selectingTitle {
+    -fx-text-fill: linear-gradient(to right, indianred, #3c2d8c);
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bolder;
+    -fx-font-size: 20;
+}
+
+.playerBuyingLabels {
+    -fx-font-family: Lato;
+    -fx-font-weight: bolder;
+    -fx-font-size: 14;
+}
+
+.playerBuyingInfo {
+    -fx-font-family: Lato;
+    -fx-font-size: 14;
+}
+
+#grid {
+    -fx-border-color: darkgray;
+}
+
+#RoundWindow {
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+
+.warning {
+    -fx-text-fill: darkred;
+    -fx-font-size: 12;
+}
+
+/*
+#grid {
+
+    -fx-background-image: url("../../images/grass.jpg");
+    -fx-background-color: burlywood;
+}
+*/
+
+
+.unitsImages, .unitsButtons {
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}

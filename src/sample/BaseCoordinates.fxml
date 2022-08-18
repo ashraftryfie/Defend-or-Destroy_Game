@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="261.0" layoutY="265.0" mnemonicParsing="false" onAction="#toChooseBase" prefHeight="34.0" prefWidth="135.0" stylesheets="@style.css" text="Next to Choose Unites" />
+      <Label alignment="CENTER" graphicTextGap="0.0" layoutX="145.0" layoutY="35.0" prefHeight="50.0" prefWidth="283.0" text="Base coordinates" underline="true">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <TextField alignment="CENTER" layoutX="261.0" layoutY="168.0" prefHeight="33.0" prefWidth="78.0" promptText="x" fx:id="xBase" />
+      <TextField fx:id="yBase" alignment="CENTER" layoutX="357.0" layoutY="167.0" prefHeight="34.0" prefWidth="78.0" promptText="y" />
+      <Label fx:id="warning" alignment="CENTER" layoutX="248.0" layoutY="210.0" prefHeight="26.0" prefWidth="218.0" stylesheets="@style.css" />
+      <ImageView fitHeight="180.0" fitWidth="211.0" layoutX="18.0" layoutY="85.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@militaryBase.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

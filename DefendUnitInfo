@@ -1,0 +1,13 @@
+MainBase 10000 0 0.00 0.00 0 0 0 50 Structure
+MirageTank 750 60 1 0.10 10 1000 70 15 Tank Tank Solider Structure Bridge
+TankDestroyer 1000 20 0.60 0.50 150 400 50 20 Tank Tank Bridge
+TeslaTank 1000 30 0.60 0.50 250 300 50 20 Tank Tank Solider Bridge
+PrismTank 1000 20 0.60 0.35 150 300 60 20 Tank Tank Solider Structure Bridge
+GrizzlyTank 1000 30 0.60 0.40 250 250 50 20 Solider Tank Solider Structure Bridge
+GrandCannon 6500 0 0.90 0.30 400 150 200 40 Structure Solider Tank Bridge
+Pillbox 4000 0 0.70 0.70 200 100 150 40 Structure Solider Bridge
+PrismTower 4000 0 0.50 0.70 200 100 150 30 Structure Solider Tank Bridge
+Sniper 250 10 0.4 0.10 700 75 5 3 Solider Solider Bridge
+NavySEAL 400 20 2 0.20 50 60 10 3 Solider Solider Tank Bridge
+Infantry 250 10 1.5 0.20 50 50 3 3 Solider Solider Bridge
+PatriotMissileSystem 2500 0 0.90 0.20 400 50 175 40 Structure Airplane Bridge
